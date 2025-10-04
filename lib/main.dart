@@ -51,18 +51,25 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ),
-              ElevatedButton(
-                onPressed: null,
-                style: ButtonStyle(
-                    backgroundColor: WidgetStateProperty.all(Colors.amber),
-                    shape:
-                    WidgetStateProperty.all(
-                        RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30)
-                        )
-                    )
+              Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    color: Colors.red,
+                    borderRadius: BorderRadius.circular(30)
                 ),
-                child: Text("Тестовая кнопка"),
+                child: ElevatedButton(
+                  onPressed: null,
+                  style: ButtonStyle(
+                      backgroundColor: WidgetStateProperty.all(Colors.amber),
+                      shape:
+                      WidgetStateProperty.all(
+                          RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30)
+                          )
+                      )
+                  ),
+                  child: Text("Тестовая кнопка"),
+                ),
               )
             ],
           )
