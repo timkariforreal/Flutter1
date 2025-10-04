@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'screens/dashboard_screen.dart';
 import 'screens/notes_screen.dart';
-
+import 'screens/calendar_screen.dart';
+import 'screens/grades_screen.dart';
+import 'screens/settings_screen.dart';
 
 class NavigationScreen extends StatefulWidget {
   const NavigationScreen({super.key});
@@ -16,6 +18,9 @@ class _NavigationScreenState extends State<NavigationScreen> {
   final List<Widget> _pages = const [
     DashboardScreen(),
     NotesScreen(),
+    CalendarScreen(),
+    GradesScreen(),
+    SettingsScreen(),
   ];
 
   @override
@@ -34,6 +39,9 @@ class _NavigationScreenState extends State<NavigationScreen> {
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.dashboard), label: "Дашборд"),
           BottomNavigationBarItem(icon: Icon(Icons.note), label: "Заметки"),
+          BottomNavigationBarItem(icon: Icon(Icons.calendar_today), label: "Календарь"),
+          BottomNavigationBarItem(icon: Icon(Icons.school), label: "Оценки"),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Настройки"),
         ],
       ),
     );
