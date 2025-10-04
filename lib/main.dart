@@ -38,18 +38,30 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
           child:
-          ElevatedButton(
-            onPressed: null,
-            style: ButtonStyle(
-                backgroundColor: WidgetStateProperty.all(Colors.amber),
-                shape:
-                WidgetStateProperty.all(
-                    RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30)
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('ФИО - Каримов Тимур Манучехрович\nНомер группы - ИКБО-12-22\nНомер студенческого билета - 22Л0592\n ',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.amber
+                ),
+              ),
+              ElevatedButton(
+                onPressed: null,
+                style: ButtonStyle(
+                    backgroundColor: WidgetStateProperty.all(Colors.amber),
+                    shape:
+                    WidgetStateProperty.all(
+                        RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30)
+                        )
                     )
-                )
-            ),
-            child: Text("Тестовая кнопка"),
+                ),
+                child: Text("Тестовая кнопка"),
+              )
+            ],
           )
       ),
     );
