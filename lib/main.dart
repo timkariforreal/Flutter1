@@ -40,6 +40,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child:
         Text('ФИО - Каримов Тимур Манучехрович\nНомер группы - ИКБО-12-22\nНомер студенческого билета - 22Л0592\n ',
         textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 20,
+            color: Colors.red
+          ),
         ),
       ),
     );
